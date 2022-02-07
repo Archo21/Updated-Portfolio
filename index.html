@@ -40,9 +40,9 @@
     </ul>
 </nav>
  <!-- home section -->
- <section class="home-section.active">
+ <section class="home-section.active home">
     <h1 class="hero-heading">Archils Oburu<br>portfolio </h1>
-    <img src="./Asset/images/Archo.jpg" class = "home.img" alt="">
+    <img src="./Asset/images/Archo.jpg" class = "homeImg" alt="">
  </section>
 
  <!-- Project section -->
@@ -140,14 +140,14 @@
         <h1 class="heading">skills</h1>
         <div class="skills-container">
             <div class="skills-card">
-                <img src="./Asset/images/html.png" class="skill-img" alt="">
+                <img src="Asset/images/html.png" class="skill-img" alt="">
                 <div class="skill-level">95%</div>
                 <h1 class="skill-name">HTML></h1>
                 <p class="skil-info">HTML, or Hypertext Markup Language.</p>
 
             </div>
             <div class="skills-card">
-                <img src="Asset/images/reactjs.png" class="skill-img" alt="" img>
+                <img src="./Asset/images/reactjs.png" class="skill-img" alt="" img>
                 <div class="skill-level">85%</div>
                 <h1 class="skill-name">reactjs></h1>
                 <p class="skil-info">A JavaScript library for building user interfaces</p>
@@ -161,7 +161,7 @@
 
             </div>
             <div class="skills-card">
-                <img src="./Asset/images/" class="skill-img" alt="" img>
+                <img src="./Asset/images/nodejs.png" class="skill-img" alt="" img>
                 <div class="skill-level">80%</div>
                 <h1 class="skill-name">nodejs></h1>
                 <p class="skil-info">Back-end JavaScript runtime environment</p>
@@ -171,9 +171,9 @@
     </div>
 </section>
     <!-- timeline -->
-<section>
+<section class="timelineSection">
     <div class="timeline-section">
-        <h1 class="heading">Education & Experience</h1>
+        <h1 class="timelineHeading">Education&Experience</h1>
         <div class="card">
             <div class="card-body">
             <h1 class="card-title">2020-Current</h1>
@@ -238,39 +238,41 @@
     </div>
 </section>
 
-<section class="contact-section.active">
+<section id="contact-section">
 <form class="contact-form">
 <input type="text" name="name" id="name" outcomplete="off" placeholder="name">
 <input type="text" name="email" id="email" outcomplete="off" placeholder="email">
 <textarea name="msg" id="msg" placeholder="message" outcomplete="off"></textarea>
 <button type="submit" class="form-submit-btn">contact</button>
 </form>
-<div class="map">
+<!-- <div class="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d171001.88918268582!2d-122.18406469450915!3d47.95757041252601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490006404f52f5b%3A0x72449f271b24790!2sEverett%2C%20WA!5e0!3m2!1sen!2sus!4v1640294098964!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-</div>
+</div> -->
 </section>
 
-    <section class="row">
+    <section id="resume-section">
+        <div class="row">
         <div class="col-lg-7 col-md-7 col-xs-12 Resume">
-          <h1>My Resume</h1>
-          <hr />
+          <h1>Resume</h1>
           <p>
-            Please welcome to my formal document that showcase my overview , professional qualifications,
-             relevant work experience, skills, education, and notable accomplishments.
+            Please welcome to my Resume  that showcase my overview , professional qualifications,
+             relevant work experience, skills, Education,Experience and notable accomplishments.
           </p>
     <a
           class="mx-3 mb-1"
           target="_blank"
-          href="./Asset/pdf/Resume.pdf"
+          href="Asset/pdf/Resume.pdf"
           aria-label="Resume"
           data-toggle="tooltip"
           data-original-title="Resume"
-          ><i class="fa fa-file-text fa-2x" aria-hidden="true"></i
+          ><i class="fa fa-file-text fa-2x" aria-hidden="false"></i
         ></a>
+          </div>
+        </div>
 </section>
 
 <section>
-<div class="Footer-section.active">
+<div id="footer-section" class="footer">
     <div class="row justify-content-center">
         <a
           class="mx-2"
@@ -280,7 +282,7 @@
         >
           <i
             class="fa fa-envelope fa-2x"
-            aria-hidden="true"
+            aria-hidden="false"
             data-toggle="tooltip"
             data-original-title="Email"
           ></i>
@@ -291,7 +293,7 @@
           class="mx-2"
           data-toggle="tooltip"
           data-original-title="GitHub"
-          ><i class="fa fa-github fa-3x" aria-hidden="true"></i>
+          ><i class="fa fa-github fa-2x" aria-hidden="false"></i>
         </a>
         <a
           class="mx-2"
@@ -301,7 +303,7 @@
           data-toggle="tooltip"
           data-original-title="LinkedIn"
         >
-          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="false"></i>
         </a>
         
       </div>

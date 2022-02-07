@@ -16,7 +16,7 @@ body{
 /* navbar */
 .navbar{
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     display: flex;
@@ -44,7 +44,7 @@ body{
     opacity: 1;
 }
 /* home section */
-.home-section{
+/* .home-section{
     width: 100%;
     height: 100vh;
     padding: 0 150px;
@@ -54,7 +54,7 @@ body{
     top: 0;
      opacity: 0;
     transition: 1s;   
-}
+} */
 .Home-section.active,
 .Project-section.active,
 .About-section.active{
@@ -70,7 +70,12 @@ body{
     text-transform: capitalize;
     font-weight: 300;
 }
-.home.img{
+.home{
+    display: flex;
+    flex-direction: row;
+
+}
+/* .homeImg{
     position: absolute;
     top: 0;
     right: 0;
@@ -78,6 +83,11 @@ body{
     width: 50%;
     object-fit:cover;
     opacity: 0.2;
+} */
+.homeImg{
+    width: 350px;
+
+
 }
 .project- section{
     width: 100% ;
@@ -90,14 +100,14 @@ body{
 }
 .project-heading{
     font-size: 90px;
-    background: #252525;
+    background:whitesmoke;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
     color: #1a1a1a;
     background-clip: text;
     -webkit-background-clip:text;
-    -webkit-text-stroke: 8px transparent;
+    -webkit-text-stroke: 4px transparent;
 } 
  .project-container{
 display: grid;
@@ -289,15 +299,18 @@ border: 10px solid;
     color: #4fff6c;
 }
 /* timeline */
+.timelineSection{
+    margin-bottom: 75px;
+}
 .timeline{
     display: block;
     width: 70% ;
     margin: 150px auto;
 }
-.heading{
-    margin: 10px;
+.timelineHeading{
+    margin-bottom: 50px;
   text-align: justify;
-
+color:white ;
 }
 .card{
 width: 45%;
@@ -438,19 +451,6 @@ color: #fff;
     border-radius: 10px;
     cursor: pointer;
 }
-.footer{
-    position:fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 5%;
-    background-color: white;
-    color: black;
-    text-align: center;
-  }
-  i{width: 50px;
-    color: #000;
-  }
 .map{
  width: 100%;   
  height: 100%;
@@ -463,9 +463,33 @@ color: #fff;
     height: 100%;
     border-radius: 5px;
 }
+#resume-section{
+    position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
 .Resume{
+    background-color: white;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    text-align: center;
+    
 }
+.footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color:blue;
+    text-align: center;
+  }
+  i{
+    color: #000;
+  }
